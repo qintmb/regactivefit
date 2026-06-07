@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-aft-50: #eef7f9;
+  --color-aft-100: #d0e9ef;
+  --color-aft-200: #a3d4df;
+  --color-aft-300: #6bb7ca;
+  --color-aft-400: #3a9aaf;
+  --color-aft-500: #1a8aa3;
+  --color-aft-600: #106376;
+  --color-aft-700: #0a4553;
+  --color-aft-800: #06313c;
+  --color-aft-900: #031e25;
+  --color-wa: #25D366;
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-slate-800);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@utility container-main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slide-across {
+  0% { left: -60px; }
+  100% { left: calc(100% + 20px); }
+}
+
+/* pulse dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
