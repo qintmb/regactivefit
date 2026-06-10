@@ -279,7 +279,7 @@ export default function ClassesSection() {
               </div>
 
               <a
-                href="https://chat.whatsapp.com/JxeFkaY0FAD9XiVFNymbQR"
+                href="https://chat.whatsapp.com/If7rYD96bX40jCRM8Mnjhw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center justify-center gap-2.5 w-full font-display italic font-semibold text-sm uppercase tracking-wide text-white bg-wa hover:bg-green-600 py-3.5 px-6 rounded-full transition-all duration-300 shadow-lg shadow-wa/20 hover:shadow-xl hover:shadow-wa/30 hover:-translate-y-0.5"
